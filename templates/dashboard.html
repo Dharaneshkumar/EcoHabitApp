@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eco Habit Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+</head>
+<body>
+  <div class="dashboard-container">
+    <h1>Welcome, {{ username }}!</h1>
+    <h2>Your Eco Points: 🌿 {{ eco_points }}</h2>
+
+    <h3>Choose your eco-actions for today:</h3>
+    <form action="/add_points" method="POST" class="eco-form">
+      <button type="submit" name="action" value="carpooling">🚗 Carpooling</button>
+      <button type="submit" name="action" value="reused_container">🔁 Reused Container</button>
+      <button type="submit" name="action" value="skipped_meat">🍽️ Skipped Meat</button>
+      <button type="submit" name="action" value="public_transport">🚍 Public Transport</button>
+      <button type="submit" name="action" value="no_plastic">🛍️ No-Plastic Day</button>
+      <button type="submit" name="action" value="custom">📝 Custom</button>
+    </form>
+
+    <div class="logout-box">
+      <p><a href="{{ url_for('index') }}">🏠 Go Back to Homepage</a></p>
+      <p><a href="{{ url_for('logout') }}">🚪 Logout</a></p>
+    </div>
+  </div>
+</body>
+</html>

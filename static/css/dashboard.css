@@ -1,0 +1,78 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f8f5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.dashboard-container {
+    background: white;
+    padding: 30px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #00796b;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    margin: 20px 0;
+    color: #333;
+}
+
+.eco-form button {
+    margin: 10px;
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #44b78b;
+    color: white;
+    transition: background-color 0.3s;
+    width: 180px;
+}
+
+.eco-form button:hover {
+    background-color: #369b73;
+}
+
+.eco-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 14px;
+    color: #555;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.logout-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ffebee;
+    border: 1px solid #f44336;
+    border-radius: 8px;
+    color: #d32f2f;
+    font-weight: bold;
+}
